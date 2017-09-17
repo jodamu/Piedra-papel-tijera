@@ -110,9 +110,11 @@ public void buscarEimprimirGanadorFinal(){
          if(juegadaCompu>jugadaPersona){
              System.out.println("\tComputador");
              System.out.println("Numero de aciertos: "+juegadaCompu);
-         } else{
+         } else if(juegadaComp<jugadaPersona){
              System.out.println("\tPersona");
              System.out.println("Numero de aciertos: "+jugadaPersona);
+         } else {
+           System.out.println("EL JUEGO TERMINO EMPATADO");
          }
  }
 }
